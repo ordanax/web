@@ -18,6 +18,7 @@ ErrorDocument 404 https://nailkit.ru
 
 
 
+
 ####################### UMI_CMS_HTACCESS_BEGIN ###########################
 RewriteEngine On
 #php_value auto_prepend_file "/libs/opaf.umi.php"
@@ -91,6 +92,4 @@ RewriteRule ^index\.php$ http://nailkit.ru/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*[^/])$ $1/ [L,R=301]
-
-
 ######################## UMI_CMS_HTACCESS_END ############################
